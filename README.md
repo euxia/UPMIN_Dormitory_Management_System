@@ -1,4 +1,4 @@
-<h1>UPMIN Dormitory ManagementSystem </h1> 
+<h1>UPMIN Dormitory Management System </h1> 
 
 This repository contains the final project of the authors in CMSC 126 and is currently under development.
 
