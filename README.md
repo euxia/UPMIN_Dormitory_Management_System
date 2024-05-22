@@ -17,5 +17,5 @@ This repository contains the final project of the authors in CMSC 126 and is cur
 <h2>:pen: Authors and Contributors </h2>
 
 * **Mark Peña** [@MakkuHuqueriza/@Maakkkuu]
-* **Lance Recla** []
-* **Deniel Natividad** []
+* **Lance Recla** [@Lanzzhoyyy]
+* **Deniel Natividad** [@euxia]
