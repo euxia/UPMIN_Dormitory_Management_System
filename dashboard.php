@@ -31,8 +31,8 @@
             echo '<td>' . htmlspecialchars($row['phonenum']) . '</td>';
             echo '<td>' . htmlspecialchars($row['address']) . '</td>';
             echo '<td>' . htmlspecialchars($row['payment']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['minor_offense']) . '</td>';
             echo '<td>' . htmlspecialchars($row['major_offense']) . '</td>';
+            echo '<td>' . htmlspecialchars($row['minor_offense']) . '</td>';            
             echo '<td>' . htmlspecialchars($row['permit']) . '</td>';
             echo '<td>';
             echo '<a href="edituser.php?studentnum=' . urlencode($row['studentnum']) . '" class="btn btn-primary btn-sm"><i class="lni lni-pencil-alt"></i></a>';
@@ -160,8 +160,8 @@
                                                 <th scope="col">Phone Number</th>
                                                 <th scope="col">Address</th>
                                                 <th scope="col">Payment (PHP)</th>
-                                                <th scope="col">Minor Offense</th>
                                                 <th scope="col">Major Offense</th>
+                                                <th scope="col">Minor Offense</th>                                               
                                                 <th scope="col">Permit</th>
                                                 <th scope="col">Action </th>
                                             </tr>

@@ -27,13 +27,16 @@
         $result = $conn->query("SELECT * FROM dormers WHERE studentnum = '$studentnum'");
         $row = $result->fetch_assoc();
         $currentPayment = $row['payment'];
-        $currentMajorOffense = $row['majoroffense'];
-        $currentMinorOffense = $row['minoroffense'];
+        $currentMajorOffense = $row['major_offense'];
+        $currentMinorOffense = $row['minor_offense'];
 
         // Add the new values to the current values
         $newPayment = $currentPayment + $payment;
+
+        // Assuming the major and minor offenses are integers
         $newMajorOffense = $currentMajorOffense + $majoroffense;
         $newMinorOffense = $currentMinorOffense + $minoroffense;
+        
 
         $stmt = $conn->prepare("UPDATE dormers SET payment = ?, major_offense = ?, minor_offense = ?, permit= ? WHERE studentnum = ?");
         $stmt->bind_param("sssss", $newPayment, $newMajorOffense, $newMinorOffense, $permit, $studentnum);
@@ -102,7 +105,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="">Minor Offense</span>
                             </div>
-                            <input name="majoroffense" type="number" class="form-control">
+                            <input name="minoroffense" type="number" class="form-control">
                         </div>
                     </div>
                 </div>
